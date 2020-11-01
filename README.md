@@ -27,6 +27,9 @@ This org.db package is made for organism annotation of Oryza sativa indica for G
 
 The package was tested on R version > 4.0. In case if you find discrepency in installation, please dropin the issue.
 
+install.packages("https://github.com/xuzhougeng/org.Osativa.eg.db/releases/download/v0.01/org.Osativa.eg.db.tar.gz", 
+    repos = NULL, 
+    type="source")
 
 # References
 1. [AnnotationForge](docs.google.com/spreadsheets/d/1ujC0Grg0y6Kov3srXI8K4mA73hjp4bgdpCNN8qroxqQ/edit#gid=0)
