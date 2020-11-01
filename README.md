@@ -38,7 +38,7 @@ The package can be loaded as
 
 ```r
 library(org.Osativa.eg.db)
-org <-org.Osativa.eg.db
+oindica <-org.Osativa.eg.db
 ```
 
 The GO term enrichment analysis can be done as follows:
