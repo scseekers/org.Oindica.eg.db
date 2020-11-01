@@ -32,6 +32,23 @@ install.packages("https://github.com/Rohit-Satyam/org.Oindica.eg.db/releases/dow
     repos = NULL, 
     type="source")
 ```
+
+# Usage
+The package can be loaded as
+
+```r
+library(org.Osativa.eg.db)
+org <-org.Osativa.eg.db
+```
+
+The GO term enrichment analysis can be done as follows:
+```r
+sample_gene <- c("BGIOSGA022584","BGIOSGA002230","BGIOSGA036090","BGIOSGA022543","BGIOSGA008791","BGIOSGA024851","BGIOSGA029373")
+oindica <- org.Oindica.eg.db
+sample_test <- enrichGO(sample_gene, OrgDb=oindica, pvalueCutoff=1, qvalueCutoff=1, keyType = "GID", ont="ALL")
+```
+
+
 # References
 1. [AnnotationForge](docs.google.com/spreadsheets/d/1ujC0Grg0y6Kov3srXI8K4mA73hjp4bgdpCNN8qroxqQ/edit#gid=0)
 
