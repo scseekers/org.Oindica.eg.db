@@ -39,6 +39,11 @@ The package can be loaded as
 ```r
 library(org.Osativa.eg.db)
 oindica <-org.Osativa.eg.db
+#To know the keytypes use
+AnnotationDbi::keytypes(oindica)
+
+# To know the columns, use
+AnnotationDbi::columns(oindica)
 ```
 
 The GO term enrichment analysis can be done as follows:
