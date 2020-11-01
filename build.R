@@ -8,16 +8,13 @@ oChr <- unique(table[,c(1,14)])
 oChr <- oChr[oChr[,2]!="-",]
 colnames(oChr) <- c("GID","CHR")
 
-## Making GO dataframe
+## Making GO dataframe. It requires merely three columns: GID","GO","EVIDENCE. For GO columns we took GO term accession.
 table$GO.domain <- gsub("molecular_function", "MF", table$GO.domain)
 table$GO.domain <- gsub("biological_process", "BP", table$GO.domain)
 table$GO.domain <- gsub("cellular_component", "CP", table$GO.domain)
-#oGO <- unique(table[,c(1,4,9,8,7)])
 oGO <- unique(table[,c(1,4,7)])
 oGO <- oGO[oGO[,2]!="",]
 oGO <- oGO[oGO[,3]!="",]
-#oGO <- oGO[oGO[,4]!="",]
-#colnames(oGO) <- c("GID","GO","GOALL","ONTOLOGY","EVIDENCE")
 colnames(oGO) <- c("GID","GO","EVIDENCE")
 
 makeOrgPackage(chromosome=oChr,go=oGO,
