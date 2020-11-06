@@ -28,3 +28,5 @@ makeOrgPackage(chromosome=oChr,go=oGO,
                goTable="go")
 
 install.packages("./org.Oindica.eg.db", repos=NULL, type="source")
+
+#tar -czvf org.Oindica.eg.db-v0.1.tar.gz org.Oindica.eg.db/
