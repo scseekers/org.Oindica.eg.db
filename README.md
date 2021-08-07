@@ -37,7 +37,7 @@ install.packages("https://github.com/Rohit-Satyam/org.Oindica.eg.db/releases/dow
 The package can be loaded as
 
 ```r
-library(org.Osativa.eg.db)
+library(org.Oindica.eg.db)
 oindica <-org.Osativa.eg.db
 #To know the keytypes use
 AnnotationDbi::keytypes(oindica)
